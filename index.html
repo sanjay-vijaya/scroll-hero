@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Fizz - Scroll Animation</title>
+
+    <meta
+      name="description"
+      content="An interactive scroll-driven hero animation experience."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+
+    <!-- ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header class="navbar">
+      <a href="#" class="logo">FIZZ<span>.</span></a>
+
+      <nav>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+      </nav>
+
+      <a href="#about" class="nav-button">Explore ↗</a>
+    </header>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section class="hero" id="experience">
+        <div class="hero-top">
+          <span class="eyebrow">A NEW KIND OF ENERGY</span>
+          <span class="edition">CREATIVE EXPERIENCE / 2026</span>
+        </div>
+
+        <h1 class="headline">
+          <span class="headline-line">WELCOME</span>
+          <span class="headline-line headline-second">
+            ITZ <span class="accent-text">FIZZ</span>
+          </span>
+        </h1>
+
+        <p class="hero-description">
+          Bold taste. Bright energy. A fresh perspective on the everyday.
+        </p>
+
+        <!-- STATISTICS -->
+        <div class="stats">
+          <article class="stat-card">
+            <span class="stat-number">98%</span>
+            <p>Good vibes guaranteed</p>
+          </article>
+
+          <article class="stat-card">
+            <span class="stat-number">85%</span>
+            <p>More reasons to smile</p>
+          </article>
+
+          <article class="stat-card">
+            <span class="stat-number">100%</span>
+            <p>Made for your moments</p>
+          </article>
+        </div>
+
+        <!-- SCROLL VISUAL -->
+        <div class="visual-stage">
+          <div class="visual-glow"></div>
+
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+
+          <span class="floating-label label-left"> FEEL THE FIZZ </span>
+
+          <span class="floating-label label-right"> TURN UP THE ENERGY </span>
+
+          <div class="can-wrapper">
+            <div class="can" id="fizz-can">
+              <div class="can-top"></div>
+
+              <div class="can-body">
+                <div class="can-brand">FIZZ</div>
+
+                <div class="can-spark">✳</div>
+
+                <div class="can-flavour">CITRUS<br />BLAST</div>
+
+                <div class="can-circle"></div>
+
+                <div class="can-bottom-text">SPARK YOUR DAY</div>
+              </div>
+
+              <div class="can-base"></div>
+            </div>
+          </div>
+
+          <div class="scroll-hint">
+            <span class="scroll-line"></span>
+            <span>SCROLL TO EXPLORE</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECOND SECTION -->
+      <section class="about-section" id="about">
+        <span class="eyebrow">MORE THAN A MOMENT</span>
+
+        <h2>
+          MAKE EVERY<br />
+          MOMENT <span>MATTER.</span>
+        </h2>
+
+        <p>
+          Fresh ideas. Bold energy. Unforgettable experiences. This is where
+          creativity meets motion.
+        </p>
+
+        <a href="#experience" class="back-button"> BACK TO TOP ↑ </a>
+      </section>
+    </main>
+
+    <footer>
+      <span>FIZZ® — CREATIVE CONCEPT</span>
+      <span>DESIGNED TO MOVE.</span>
+    </footer>
+  </body>
+</html>
